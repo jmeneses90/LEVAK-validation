@@ -1,0 +1,25 @@
+﻿# 1. Credentials (never upload)
+.Renviron
+.env
+*.key
+
+# 2. R and VS Code
+.Rhistory
+.RData
+.Rproj.user/
+.Ruserdata
+.vscode/
+
+# 3. Temporary files in Quarto
+/.quarto/
+*_cache/
+
+# 4. Temporary files in Office
+~$*
+*.tmp
+Thumbs.db
+.DS_Store
+
+# 5. Outpus (large and not needed)
+outputs/*.rds
+outputs/tmp/
