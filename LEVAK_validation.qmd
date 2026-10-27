@@ -1,0 +1,59 @@
+---
+title: "LEVAK validation"
+author: "Jose F. Meneses-Echavez"
+date: today
+format: 
+  html:
+    toc: true
+    toc-depth: 3
+    theme: flatly
+    embed-resources: true
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+Text text example
+
+## Uploading the libraries and packages
+
+This text describes the title/subtitle - it's just an example.
+
+```{r}
+# Load packages and libraries
+library(rsconnect)
+library(AIscreenR)
+library(writexl)
+library(dplyr)
+library(synthesisr)
+library(tibble)
+library(revtools)
+library(flextable)
+library(tinytex)
+library(tidyr)
+library(ggplot2)
+library(gt)
+library(webshot2)
+library(packrat)
+library(rsconnect)
+library(chromote)
+library(readxl)
+library(future)
+
+devtools::install_github("MikkelVembye/AIscreenR") # install the most recent pakcage update
+```
+
+Text - example
+
+## setting the API key
+
+This text describes the title/subtitle - it's just an example.
+
+```{r}
+# usethis::edit_r_environ() # Run this code to open your .Renviron file and  write CHATGPT_KEY=your_key. Thereafter, close and save the .Renviron file and restart RStudio (ctrl + shift + F10). From now on, the AIscreenR functions will automatically use get_api_key() to retrieve your API key from your R environment. 
+
+get_api_key() # To check the API Key was saved successfully.
+```
+
+This text describes the title/subtitle - it's just an example.
